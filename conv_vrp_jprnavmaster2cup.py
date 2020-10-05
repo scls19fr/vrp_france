@@ -14,13 +14,15 @@ fname_out = "vrp_france.cup"
 with open(fname_out, "wb") as fd:
     w = Writer(fd)
     for (_, wpt) in df.iterrows():
-        splited_code = wpt.CODE.split("/")
+        code = wpt.CODE
+        splited_code = code.split("/")
         if len(splited_code) == 2:
             ad, shortname = splited_code
+            code = shortname + "@" + ad
         else:
             shortname = wpt.CODE
         w.write_waypoint(
-            wpt.CODE,
+            code,
             shortname,
             wpt.Pays,
             wpt.Latitude,
