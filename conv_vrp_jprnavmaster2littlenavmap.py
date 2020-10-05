@@ -3,7 +3,8 @@ import pandas as pd
 fname = "vrp_france_jprnavmaster.csv"
 
 # ToDo: manually add a ; at end of first line
-df = pd.read_csv(fname, encoding="latin1", sep=";")
+encoding = "utf8"  # "latin1"
+df = pd.read_csv(fname, encoding=encoding, sep=";")
 
 print(df)
 
