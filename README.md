@@ -1,6 +1,6 @@
 # vrp_france
 
-Visual Report Points France - Point de report VFR France 
+Visual Reporting Points France - Point de report VFR France 
 
 !!! For simulation purpose only !!!
 
