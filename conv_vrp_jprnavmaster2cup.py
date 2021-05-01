@@ -6,13 +6,14 @@ from aerofiles.seeyou.converter import WaypointStyle
 
 @click.command()
 @click.option(
-    "--input", default="vrp_france_jprnavmaster.csv", help="CSV filename input"
+    "--input", default="vrp_france_jprnavmaster.xlsx", help="XLSX filename input"
 )
 @click.option("--output", default="vrp_france.cup", help="CUP filename output")
 def main(input, output):
     # ToDo: manually add a ; at end of first line
-    encoding = "utf8"  # "latin1"
-    df = pd.read_csv(input, encoding=encoding, sep=";")
+    # encoding = "utf8"  # "latin1"
+    # df = pd.read_csv(input, encoding=encoding, sep=";")
+    df = pd.read_excel(input)
 
     print(df)
 
