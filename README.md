@@ -5,3 +5,5 @@ Visual Reporting Points France - Point de report VFR France
 !!! For simulation purpose only !!!
 
 Data from http://www.jprendu.fr/aeroweb/_private/21_JpRNavMaster/JpRNavMasterSearchPanel_Fr.html
+
+Pts de Report VFR / Export CSV / ouverture dans Excel / export XLSX
